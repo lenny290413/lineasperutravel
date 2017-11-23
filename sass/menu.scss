@@ -1,0 +1,90 @@
+@import "lg_grid";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.entero {
+    width: 100%;
+    @include display;
+}
+
+.medio {
+    width: 80%;
+}
+
+header {
+    background: white;
+    box-shadow: 0px 7px 5px -5px rgba(0, 0, 0, 0.75);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    nav {
+        @include display;
+        justify-content: space-between;
+        img {
+            width: 300px;
+        }
+    }
+}
+
+.menu {
+    @include display;
+    li {
+        margin: 10px;
+        font-family: $fuente_titulo;
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid red;
+        a{
+            @include display;
+            flex-direction: column-reverse;
+            span{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.colores {
+    width: 100%;
+    height: 5px;
+    @include display;
+    .colores-top {
+        width: 16.6%;
+        height: 100%;
+        flex: auto;
+        &:first-child {
+            background: #824e49;
+        }
+        &:nth-child(2) {
+            background: #ca8151;
+        }
+        &:nth-child(3) {
+            background: #887e35;
+        }
+        &:nth-child(4) {
+            background: #2c9e88;
+        }
+        &:nth-child(5) {
+            background: #287890;
+        }&:last-child {
+            background: #8c4cd8;
+        }
+        
+    }
+
+}
