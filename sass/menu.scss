@@ -20,7 +20,7 @@ a {
 }
 
 .medio {
-    width: 80%;
+    width: 90%;
 }
 
 header {
@@ -31,12 +31,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100px;
+    height: 100px;
     nav {
         @include display;
         justify-content: space-between;
         img {
-            width: 300px;
+            width: 280px;
         }
     }
 }
@@ -44,16 +44,41 @@ header {
 .menu {
     @include display;
     li {
-        margin: 10px;
+        margin: 5px;
         font-family: $fuente_titulo;
         cursor: pointer;
-        padding: 10px;
-        border: 1px solid red;
-        a{
+        transition: all .3s;
+        &:first-child {
+            box-shadow: 0 1px 0 0 $color-primario;
+        }
+        a {
             @include display;
             flex-direction: column-reverse;
-            span{
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            span {
                 width: 100%;
+                @include display;
+                padding: 10px;
+            }
+            i {
+                width: 100%;
+                background: $color-primario;
+                padding: 10px;
+                @include display;
+                position: absolute;
+                top: -100%;
+                color: white;
+                transition: all .3s;
+            }
+        }
+        &:hover {
+            box-shadow: 0 1px 0 0 $color-primario;
+            transition: all .3s;
+            i {
+                top: 3px;
+                transition: all .3s;
             }
         }
     }
@@ -81,10 +106,71 @@ header {
         }
         &:nth-child(5) {
             background: #287890;
-        }&:last-child {
+        }
+        &:last-child {
             background: #8c4cd8;
         }
-        
+
     }
 
+}
+
+.icon-menu {
+    display: none;
+}
+.menu-aparecer{
+    left: 0% !important;
+    opacity: 0;
+    transition: all .3s;
+}
+
+@media screen and (max-width:920px) {
+    body {
+        position: relative;
+    }
+    .menu {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        background: rgba($color-primario, .9);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 1;
+        transition: all .3s;
+        li {
+            width: 100%;
+            margin: 0;
+            padding: 10px 0;
+            &:first-child {
+                box-shadow: 0 0 0 0 $color-primario;
+            }
+            &:hover {
+                box-shadow: 0 0 0 0 $color-primario;
+            }
+            border-bottom: 1px solid white;
+        }
+        a {
+            color: white;
+            i{
+                display: none !important;
+            }
+        }
+
+    }
+    .icon-menu {
+        display: block;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:369px) {
+    header{
+        a{
+            img{
+            width: 180px;
+        }
+        }
+    }
 }

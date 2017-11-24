@@ -27,7 +27,7 @@ a {
   align-items: center; }
 
 .medio {
-  width: 80%; }
+  width: 90%; }
 
 header {
   background: white;
@@ -70,7 +70,7 @@ header {
     -ms-flex-pack: justify;
     justify-content: space-between; }
     header nav img {
-      width: 300px; }
+      width: 280px; }
 
 .menu {
   display: -webkit-box;
@@ -86,11 +86,15 @@ header {
   -ms-flex-align: center;
   align-items: center; }
   .menu li {
-    margin: 10px;
+    margin: 5px;
     font-family: "Roboto Condensed", sans-serif;
     cursor: pointer;
-    padding: 10px;
-    border: 1px solid red; }
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .menu li:first-child {
+      -webkit-box-shadow: 0 1px 0 0 #1B3E6A;
+      box-shadow: 0 1px 0 0 #1B3E6A; }
     .menu li a {
       display: -webkit-box;
       display: -webkit-flex;
@@ -108,9 +112,58 @@ header {
       -webkit-box-direction: reverse;
       -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse; }
+      flex-direction: column-reverse;
+      position: relative;
+      overflow: hidden;
+      text-align: center; }
       .menu li a span {
-        width: 100%; }
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 10px; }
+      .menu li a i {
+        width: 100%;
+        background: #1B3E6A;
+        padding: 10px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: absolute;
+        top: -100%;
+        color: white;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+    .menu li:hover {
+      -webkit-box-shadow: 0 1px 0 0 #1B3E6A;
+      box-shadow: 0 1px 0 0 #1B3E6A;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .menu li:hover i {
+        top: 3px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
 
 .colores {
   width: 100%;
@@ -146,3 +199,56 @@ header {
       background: #287890; }
     .colores .colores-top:last-child {
       background: #8c4cd8; }
+
+.icon-menu {
+  display: none; }
+
+.menu-aparecer {
+  left: 0% !important;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+@media screen and (max-width: 920px) {
+  body {
+    position: relative; }
+  .menu {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: rgba(27, 62, 106, 0.9);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 1;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .menu li {
+      width: 100%;
+      margin: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid white; }
+      .menu li:first-child {
+        -webkit-box-shadow: 0 0 0 0 #1B3E6A;
+        box-shadow: 0 0 0 0 #1B3E6A; }
+      .menu li:hover {
+        -webkit-box-shadow: 0 0 0 0 #1B3E6A;
+        box-shadow: 0 0 0 0 #1B3E6A; }
+    .menu a {
+      color: white; }
+      .menu a i {
+        display: none !important; }
+  .icon-menu {
+    display: block;
+    font-size: 40px;
+    cursor: pointer; } }
+
+@media screen and (max-width: 369px) {
+  header a img {
+    width: 180px; } }
