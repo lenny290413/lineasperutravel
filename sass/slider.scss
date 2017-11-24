@@ -1,0 +1,12 @@
+@import "lg_grid";
+.banner{
+    background: red;
+    width: 100%;
+    height: 500px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}
