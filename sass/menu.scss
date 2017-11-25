@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h1,h2,h3,h4,h5{
+    font-weight: normal;
+}
 li {
     list-style: none;
 }
@@ -21,6 +23,19 @@ a {
 
 .medio {
     width: 90%;
+}
+.titulo-contenedor{
+    @include display;
+    flex-direction: column;
+    margin: 20px 0;
+    .titulo{
+        font-family: $fuente_titulo;
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        width: 150px;
+    }
 }
 
 header {

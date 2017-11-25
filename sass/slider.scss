@@ -3,10 +3,69 @@
     background: red;
     width: 100%;
     height: 500px;
+    position: relative;
     img{
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: bottom;
+    }
+}
+
+.banner-informacion{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    h1{
+        font-family: $fuente_corrida;
+        color: $color-primario;
+        font-size: 35px;
+        margin: 10px;
+    }
+    p{
+        font-size: 16px;
+        margin: 10px;
+        line-height: 25px;
+        font-family: $fuente_titulo;
+    } 
+    a{
+        padding: 15px 5px;
+        border: 1px solid white;
+        margin: 10px;
+        width: 250px;
+        @include display;
+        background: rgba($color-primario,.6);
+        color: white;
+        font-family: $fuente_titulo;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .banner-informacion{
+        left: 20px;
+        h1{
+            font-size:25px;
+        }
+        p{
+            font-size: 14px;
+        }
+        a{
+            padding: 10px 10px;
+            width: 150px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:700px){
+    .banner-informacion{
+        width: 90%;
     }
 }

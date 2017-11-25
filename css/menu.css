@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+h1, h2, h3, h4, h5 {
+  font-weight: normal; }
+
 li {
   list-style: none; }
 
@@ -28,6 +31,32 @@ a {
 
 .medio {
   width: 90%; }
+
+.titulo-contenedor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 20px 0; }
+  .titulo-contenedor .titulo {
+    font-family: "Roboto Condensed", sans-serif;
+    width: 100%;
+    text-align: center; }
+  .titulo-contenedor img {
+    width: 150px; }
 
 header {
   background: white;
