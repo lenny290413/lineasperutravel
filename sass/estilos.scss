@@ -83,6 +83,126 @@
     }
 }
 
+
+/*PRIMERA SECCION*/
+.primera-seccion{
+    margin-top: $margin;
+    .medio{
+        @include display;
+    }
+}
+.promociones-contenedor-total{
+    width: 70%;
+    height: 500px;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+     &:hover .icon-derecha{
+        opacity: 1;
+        transition: all .5s;   
+    }
+     &:hover .icon-izquierda{
+        opacity: 1;
+        transition: all .5s;   
+    }
+    &::after{
+        content: "Ofertas del día";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: $fuente_corrida;
+        background: rgba(white,.6);
+        font-size: 25px;
+        box-shadow: 1px 5px 0px 0px #343434;
+    }
+}
+.promociones-contenedor{
+    width: 400%;
+    display: flex;
+}
+.promociones-items{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.promocion-encima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include display;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: rgba(black,.2);
+    color: white;
+    font-family: $fuente_titulo;
+    z-index: 99;
+    h2{
+        margin: 10px;
+        
+    }
+   
+}
+.precio-dolar{
+    margin-right: 10px;
+}
+.icon-izquierda,.icon-derecha{
+    position: absolute;
+    top: 45%;
+    transform: translate(-50% -50%);
+    z-index: 99;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all .5s;   
+}
+.icon-izquierda{
+    left: 0;
+}
+.icon-derecha{
+    right: 0;
+}
+
+
+.promociones-derecha {
+    width: 30%;
+    background: red;
+    height: 500px;
+}
+
+.vendidos,.arma{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+     &::after{
+        content: "Los más vendido";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: $fuente_corrida;
+        background: rgba(white,.6);
+        font-size: 25px;
+        box-shadow: 1px 5px 0px 0px #343434;
+    }
+}
+/*fin de primera seccion*/
 @media screen and (max-width:768px) {
     .peru_items {
         width: 30%;

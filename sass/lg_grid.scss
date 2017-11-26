@@ -1,6 +1,7 @@
 $fuente_titulo: 'Roboto Condensed', sans-serif;
 $fuente_corrida: 'Pacifico', cursive;
 $color-primario:#1B3E6A;
+$margin: 20px;
 @mixin display{
     display: flex;
     justify-content: center;

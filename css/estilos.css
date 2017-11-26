@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .peru .medio {
   display: -webkit-box;
   display: -webkit-flex;
@@ -123,6 +124,152 @@
     -ms-transform: translateX(0%);
     transform: translateX(0%); }
 
+/*PRIMERA SECCION*/
+.primera-seccion {
+  margin-top: 20px; }
+  .primera-seccion .medio {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.promociones-contenedor-total {
+  width: 70%;
+  height: 500px;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden; }
+  .promociones-contenedor-total:hover .icon-derecha {
+    opacity: 1;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+  .promociones-contenedor-total:hover .icon-izquierda {
+    opacity: 1;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+  .promociones-contenedor-total::after {
+    content: "Ofertas del día";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 25px;
+    -webkit-box-shadow: 1px 5px 0px 0px #343434;
+    box-shadow: 1px 5px 0px 0px #343434; }
+
+.promociones-contenedor {
+  width: 400%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.promociones-items {
+  width: 25%;
+  height: 100%;
+  position: relative; }
+  .promociones-items img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.promocion-encima {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 99; }
+  .promocion-encima h2 {
+    margin: 10px; }
+
+.precio-dolar {
+  margin-right: 10px; }
+
+.icon-izquierda, .icon-derecha {
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  z-index: 99;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+
+.icon-izquierda {
+  left: 0; }
+
+.icon-derecha {
+  right: 0; }
+
+.promociones-derecha {
+  width: 30%;
+  background: red;
+  height: 500px; }
+
+.vendidos, .arma {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: relative; }
+  .vendidos img, .arma img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .vendidos::after, .arma::after {
+    content: "Los más vendido";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 25px;
+    -webkit-box-shadow: 1px 5px 0px 0px #343434;
+    box-shadow: 1px 5px 0px 0px #343434; }
+
+/*fin de primera seccion*/
 @media screen and (max-width: 768px) {
   .peru_items {
     width: 30%;
