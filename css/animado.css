@@ -1,0 +1,10 @@
+#viajero d {
+ 
+}
+
+@keyframes animacioncaminando{
+    from{
+        transform: scalex(500deg);
+        transition: transform .3s;
+    }
+}
