@@ -1,0 +1,32 @@
+@import "lg_grid";
+.footer{
+    background: $color-primario; 
+    padding: 20px;
+    margin-top: 50px;
+
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .info{
+        display: flex;
+        flex-direction: column;
+        span{
+            padding: 5px;
+            color: white;
+            font-family: $fuente_titulo;
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .footer{
+        .medio{
+            @include display;
+            .info{
+                display: none;
+            }
+        }
+    }
+}

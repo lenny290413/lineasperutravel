@@ -28,6 +28,7 @@ a {
     @include display;
     flex-direction: column;
     margin: 20px 0;
+    
     .titulo{
         font-family: $fuente_titulo;
         width: 100%;
@@ -48,6 +49,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 100px;
+    top: 0;
+    left: 0;
     nav {
         @include display;
         justify-content: space-between;

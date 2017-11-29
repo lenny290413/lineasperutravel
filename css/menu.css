@@ -81,7 +81,9 @@ header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100px; }
+  height: 100px;
+  top: 0;
+  left: 0; }
   header nav {
     display: -webkit-box;
     display: -webkit-flex;

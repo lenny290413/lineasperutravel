@@ -1,23 +1,14 @@
 @import "lg_grid";
 .peru {
     .medio {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 300px);
+        grid-gap: 5px;
     }
 }
-.subtitulo{
-    flex-wrap: wrap;
-    width: 100%;
-    font-family: $fuente_titulo;
-    color: $color-primario;
-    font-weight: bolder;
-    margin-bottom: 10px;
-    letter-spacing: 10px;
-}
+
 .peru_items {
-    width: 19%;
-    height: 450px;
-    margin-right: 5px;
     flex: auto;
     position: relative;
     overflow: hidden;
@@ -25,7 +16,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        display: block;
     }
     &::after {
         z-index: 50;
@@ -42,6 +32,34 @@
     }
     &:hover:after {
         transform: scale(10);
+    }
+    &:first-child {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+    &:nth-child(2) {
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 1;
+    }
+    &:nth-child(3) {
+        grid-column: 5 / span 2;
+        grid-row: 1 / span 1;
+    }
+    &:nth-child(4) {
+        grid-column: 7 / span 2;
+        grid-row: 1 / span 1;
+    }
+    &:nth-child(5) {
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 1;
+    }
+    &:nth-child(6) {
+        grid-column: 5 / span 2;
+        grid-row: 2 / span 1;
+    }
+    &:nth-child(7) {
+        grid-column: 7 / span 2;
+        grid-row: 2 / span 1;
     }
 }
 
@@ -60,7 +78,7 @@
         text-align: center;
         color: white;
         font-size: 35px;
-        transform: translateX(-200%);
+        transform: translateX(-500%);
         transition: transform .5s;
         font-weight: lighter;
     }
@@ -72,7 +90,7 @@
         padding: 10px 20px;
         color: white;
         font-family: $fuente_titulo;
-        transform: translateX(200%);
+        transform: translateX(500%);
         transition: transform .5s;
     }
     &:hover .titulo-paquete {
@@ -85,43 +103,47 @@
 
 
 /*PRIMERA SECCION*/
-.primera-seccion{
+
+.primera-seccion {
     margin-top: $margin;
-    .medio{
+    .medio {
         @include display;
     }
 }
-.promociones-contenedor-total{
+
+.promociones-contenedor-total {
     width: 70%;
     height: 500px;
     margin-right: 10px;
     position: relative;
     overflow: hidden;
-     &:hover .icon-derecha{
+    &:hover .icon-derecha {
         opacity: 1;
-        transition: all .5s;   
+        transition: all .5s;
     }
-     &:hover .icon-izquierda{
+    &:hover .icon-izquierda {
         opacity: 1;
-        transition: all .5s;   
+        transition: all .5s;
     }
 }
-.promociones-contenedor{
+
+.promociones-contenedor {
     width: 400%;
     display: flex;
 }
-.promociones-items{
+
+.promociones-items {
     width: 25%;
     height: 100%;
     position: relative;
-    img{
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 }
 
-.promocion-encima{
+.promocion-encima {
     position: absolute;
     top: 0;
     left: 0;
@@ -129,21 +151,21 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: rgba(black,.4);
+    background: rgba(black, .2);
     color: white;
     font-family: $fuente_titulo;
     z-index: 99;
-    h2{
+    h2 {
         margin: 10px;
         font-size: 30px;
     }
-    p{
-        span{
+    p {
+        span {
             font-size: 22px;
 
         }
     }
-    a{
+    a {
         position: relative;
         display: block;
         margin-top: 10px;
@@ -151,19 +173,22 @@
         border: 1px solid white;
         color: white;
         transition: all .3s;
-        
-        &:hover{
-            background: rgba(white,.2);
+
+        &:hover {
+            background: rgba(white, .2);
             color: black;
             transition: all .3s;
         }
     }
-   
+
 }
-.precio-dolar{
+
+.precio-dolar {
     margin-right: 10px;
 }
-.icon-izquierda,.icon-derecha{
+
+.icon-izquierda,
+.icon-derecha {
     position: absolute;
     top: 45%;
     transform: translate(-50% -50%);
@@ -172,123 +197,204 @@
     font-size: 50px;
     cursor: pointer;
     opacity: 0.5;
-    transition: all .5s;   
+    transition: all .5s;
 }
-.icon-izquierda{
+
+.icon-izquierda {
     left: 0;
 }
-.icon-derecha{
+
+.icon-derecha {
     right: 0;
 }
-.paquete-derecha{
+
+/*SLIDER DERECHO*/
+
+.paquete-derecha {
     width: 30%;
     height: 500px;
-    @include display;
     position: relative;
+    flex: auto;
     overflow: hidden;
 }
-.paquete-derecha-contenedor{
+
+.paquete-derecha-contenedor {
     width: 400%;
     height: 100%;
-    @include display;
+    display: flex;
 }
-.paquete-items{
+
+.paquete-items {
     width: 100%;
     height: 100%;
-    flex: none;
-      img{
+    flex: auto;
+    position: relative;
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+    &:hover .paquete-items-encima {
+        bottom: 0;
+        transition: all .3s;
+    }
 }
-/*fin de primera seccion*/
 
+.paquete-items-encima {
+    position: absolute;
+    bottom: -120px;
+    width: 100%;
+    background: rgba($color-primario, .5);
+    left: 0;
+    @include display;
+    flex-direction: column;
+    transition: all .3s;
+    h2 {
+        text-align: center;
+        padding: 10px;
+        font-family: $fuente_corrida;
+        color: white;
+        border-bottom: 1px solid white;
+        height: 55px;
+    }
+    p {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-family: $fuente_titulo;
+    }
+    a {
+        margin: 10px;
+        padding: 10px 20px;
+        border: 1px solid white;
+        color: white;
+        font-family: $fuente_titulo;
+    }
+}
+
+/*fin de primera seccion*/
 
 /*seccion de beneficios*/
 
-.beneficios{
-    .medio{
+.beneficios {
+    .medio {
         @include display;
         flex-direction: row-reverse;
     }
-    .beneficio_izquierda{
+    .beneficio_izquierda {
         width: 70%;
         flex: auto;
         @include display;
         align-items: flex-start;
         flex-wrap: wrap;
-        min-height:400px;
+        min-height: 400px;
     }
-    .beneficio_derecha{
+    .beneficio_derecha {
         width: 30%;
         flex: auto;
         @include display;
-        min-height:400px;
-        img{
+        min-height: 400px;
+        img {
             width: 250px;
         }
     }
 }
-.beneficio_items{
+
+.beneficio_items {
     width: 50%;
     padding: 10px;
-    span{
+    span {
         display: flex;
         flex-direction: column;
-        i{
+        i {
             margin-bottom: 5px;
-            font-size:40px;
+            font-size: 40px;
             color: $color-primario;
         }
-        h3{
+        h3 {
             margin-bottom: 5px;
             padding-bottom: 5px;
             border-bottom: 1px solid $color-primario;
             font-family: $fuente_corrida;
             font-size: 30px;
         }
-       
-        
+
+
     }
-     p{
-            font-family: $fuente_titulo;
-            line-height: 20px;
-         text-align: justify;
-        }
+    p {
+        font-family: $fuente_titulo;
+        line-height: 20px;
+        text-align: justify;
+    }
 }
+
 /*fin seccion de beneficios*/
 
 @media screen and (max-width:768px) {
-    .peru_items {
-        width: 30%;
-        height: 350px;
-        &:nth-child(5) {
-            margin-top: 5px;
-        }
-        &:last-child {
-            margin-top: 5px;
-        }
-    }
+
     .contenido-paquete {
         .titulo-paquete {
             font-size: 22px;
         }
-        .boton-paquete{
+        .boton-paquete {
             font-size: 12px;
         }
+    }
+    .promociones-contenedor-total {
+        height: 300px;
+    }
+    .paquete-derecha {
+        width: 40%;
+        height: 300px;
+    }
+    .peru.entero{
+        .medio{
+            grid-template-rows: repeat(2, 200px);
+        }
+    }
+    .beneficio_derecha{
+        display: none !important;
+    }
+    .peru{
+        .medio{
+            display: flex;
+            flex-wrap: wrap;
+            .peru_items{
+                height: 300px;
+                margin-bottom: 15px;
+            } 
+        }
+    }
+    .beneficio_izquierda{
+        flex-direction: column;
+        .beneficio_items{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .peru_items {
+        width: 100%;
+        object-position: center;
+        height: 150px !important;
+        margin-top: 5px;
+    }
+    .subtitulo {
+        text-align: center;
     }
     
 }
 
-@media screen and (max-width:500px) {
-     .peru_items {
-        width:100%;
-         object-position: center;
-         height: 150px;
-         margin-top: 5px;
+@media screen and (max-width:400px) {
+    .primera-seccion.entero {
+        .medio {
+            flex-direction: column;
         }
-    .subtitulo{
-        text-align: center;
+    }
+    .paquete-derecha,
+    .promociones-contenedor-total {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
