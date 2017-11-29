@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .peru .medio {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21,7 +20,7 @@
 
 .peru_items {
   width: 19%;
-  height: 500px;
+  height: 450px;
   margin-right: 5px;
   -webkit-box-flex: 1;
   -webkit-flex: auto;
@@ -86,7 +85,7 @@
   height: 100%;
   cursor: pointer; }
   .contenido-paquete .titulo-paquete {
-    font-family: "Pacifico", cursive;
+    font-family: "Kavivanar", cursive;
     text-align: center;
     color: white;
     font-size: 35px;
@@ -146,19 +145,7 @@
   height: 500px;
   margin-right: 10px;
   position: relative;
-  overflow: hidden;
-  /*  &::after{
-        content: "Ofertas del día";
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: $fuente_corrida;
-        background: rgba(white,.6);
-        font-size: 25px;
-        box-shadow: 1px 5px 0px 0px #343434;
-    }*/ }
+  overflow: hidden; }
   .promociones-contenedor-total:hover .icon-derecha {
     opacity: 1;
     -webkit-transition: all .5s;
@@ -219,6 +206,22 @@
     font-size: 30px; }
   .promocion-encima p span {
     font-size: 22px; }
+  .promocion-encima a {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .promocion-encima a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: black;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
 
 .precio-dolar {
   margin-right: 10px; }
@@ -244,25 +247,152 @@
 .icon-derecha {
   right: 0; }
 
-.promociones-derecha {
+.paquete-derecha {
   width: 30%;
-  height: 500px; }
+  height: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; }
 
-.vendidos, .arma {
+.paquete-derecha-contenedor {
+  width: 400%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.paquete-items {
   width: 100%;
-  height: 50%;
-  overflow: hidden;
-  position: relative; }
-  .vendidos img, .arma img {
+  height: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none; }
+  .paquete-items img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover; }
 
-.vendidos {
-  margin-bottom: 5px; }
-
 /*fin de primera seccion*/
+/*seccion de beneficios*/
+.beneficios .medio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.beneficios .beneficio_izquierda {
+  width: 70%;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 400px; }
+
+.beneficios .beneficio_derecha {
+  width: 30%;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 400px; }
+  .beneficios .beneficio_derecha img {
+    width: 250px; }
+
+.beneficio_items {
+  width: 50%;
+  padding: 10px; }
+  .beneficio_items span {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .beneficio_items span i {
+      margin-bottom: 5px;
+      font-size: 40px;
+      color: #1B3E6A; }
+    .beneficio_items span h3 {
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #1B3E6A;
+      font-family: "Kavivanar", cursive;
+      font-size: 30px; }
+  .beneficio_items p {
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 20px;
+    text-align: justify; }
+
+/*fin seccion de beneficios*/
 @media screen and (max-width: 768px) {
   .peru_items {
     width: 30%;

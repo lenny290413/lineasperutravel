@@ -56,3 +56,57 @@ anterior.on('click',function() {
 
 
 autoplay();
+
+
+
+
+//almacenar slider en una variable
+var slider_paquete = $('#slider_paquetes');
+//almacenar botones
+var siguiente2 = $('#btn-next2');
+var anterior2 = $('#btn-prev2');
+
+//mover ultima imagen al primer lugar
+$('.paquete-items:last').insertBefore('.paquete-items:first');
+//mostrar la primera imagen con un margen de -100%
+slider_paquete.css('margin-left', '-'+100+'%');
+
+function moverD2() {
+	slider_paquete.animate({
+		marginLeft:'-'+200+'%'
+	} ,700, function(){
+		$('.paquete-items:first').insertAfter('.paquete-items:last');
+		slider_paquete.css('margin-left', '-'+100+'%');
+	});
+}
+
+function moverI2() {
+	slider_paquete.animate({
+		marginLeft:0
+	} ,700, function(){
+		$('.paquete-items:last').insertBefore('.paquete-items:first');
+		slider_paquete.css('margin-left', '-'+100+'%');
+	});
+}
+
+function autoplay2() {
+	interval = setInterval(function(){
+		moverD2();
+	}, 1000);
+}
+siguiente2.on('click',function() {
+	moverD2();
+	clearInterval(interval);
+	autoplay2();
+});
+
+anterior2.on('click',function() {
+	moverI2();
+	clearInterval(interval);
+	autoplay2();
+});
+
+
+autoplay2();
+
+
