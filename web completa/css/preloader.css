@@ -1,0 +1,179 @@
+.preloader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background: white;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.top {
+  position: absolute;
+  background: black; }
+
+.top1 {
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 25%; }
+
+.top2 {
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 5px; }
+
+.top3 {
+  bottom: 0;
+  right: 0;
+  width: 5px;
+  height: 25%; }
+
+.top4 {
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 5px; }
+
+.contenido-proloader {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  height: 50%; }
+  .contenido-proloader img {
+    width: 400px;
+    -webkit-animation: .5s prelo infinite alternate;
+    animation: .5s prelo infinite alternate;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+  .contenido-proloader h1 {
+    font-family: "Francois One", sans-serif !important; }
+  .contenido-proloader h2 {
+    font-family: "Francois One", sans-serif !important; }
+
+.cerrar-preloader {
+  opacity: 0;
+  -webkit-transform: translateY(-150%);
+  -ms-transform: translateY(-150%);
+  transform: translateY(-150%);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.circulo {
+  width: 70%;
+  margin-top: 20px;
+  height: 20px;
+  border: 1px solid black; }
+
+@-webkit-keyframes prelo {
+  to {
+    -webkit-filter: opacity(20%);
+    filter: opacity(20%);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+  from {
+    -webkit-filter: opacity(100%);
+    filter: opacity(100%);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; } }
+
+@keyframes prelo {
+  to {
+    -webkit-filter: opacity(20%);
+    filter: opacity(20%);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+  from {
+    -webkit-filter: opacity(100%);
+    filter: opacity(100%);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; } }
+
+@media screen and (max-width: 1500px) {
+  .contenido-proloader {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    height: 50%; }
+    .contenido-proloader img {
+      width: 400px;
+      -webkit-animation: .5s prelo infinite alternate;
+      animation: .5s prelo infinite alternate;
+      -webkit-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s; }
+    .contenido-proloader h1 {
+      font-family: "Francois One", sans-serif;
+      text-align: center; } }
+
+@media screen and (max-width: 1024px) {
+  .contenido-proloader img {
+    width: 300px; }
+  .contenido-proloader h1 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 769px) {
+  .contenido-proloader {
+    width: 90%; }
+    .contenido-proloader h1 {
+      font-size: 25px; } }
+
+@media screen and (max-width: 369px) {
+  .contenido-proloader {
+    width: 90%;
+    height: 40%; }
+    .contenido-proloader img {
+      width: 180px; }
+    .contenido-proloader h1 {
+      font-size: 20px; } }

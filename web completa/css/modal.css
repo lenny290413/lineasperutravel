@@ -1,0 +1,256 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+
+div#calculo{
+    position: fixed;
+    width:100%;
+    display: none;
+    height:100vh;
+    top:0;
+    left: 0;
+    z-index: 90000;
+    background-color:rgba(0,0,0,0.3);
+}
+
+div#calculo div#zoom{
+    
+    width:100%;
+    height:100%;
+    -webkit-perspective:2000px;
+}
+
+div#calculo div#zoom div#ventana{
+    
+    width:30vw;
+    padding:8px;
+    height:auto;
+    background-color: white;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform-origin:top;
+    transform:rotateX(-180deg);
+    flex-direction: column;
+}
+
+.efecto_modal{
+    
+    -webkit-animation-duration:1s;
+    -webkit-animation-name:rotar;
+    -webkit-animation-fill-mode: forwards;
+    
+    -ms-animation-duration:1s;
+    -ms-animation-name:rotar;
+    -ms-animation-fill-mode: forwards;
+    
+    -o-animation-duration:1s;
+    -o-animation-name:rotar;
+    -o-animation-fill-mode: forwards;
+    
+    -moz-animation-duration:1s;
+    -moz-animation-name:rotar;
+    -moz-animation-fill-mode: forwards;
+    
+    
+}
+
+@-webkit-keyframes rotar{
+    
+    0%{
+        
+        transform:rotateX(-180deg); 
+        -ms-transform:rotateX(-180deg); 
+        -o-transform:rotateX(-180deg); 
+        -webkit-transform:rotateX(-180deg); 
+        -moz-transform:rotateX(-180deg); 
+    }
+    
+    70%{
+        
+        -ms-transform:rotateX(70deg);
+        -o-transform:rotateX(70deg);
+        -webkit-transform:rotateX(70deg);
+        -moz-transform:rotateX(70deg);
+        
+    }
+    
+    100%{
+        
+       transform:rotateX(0deg);
+       -o-transform:rotateX(0deg);
+       -ms-transform:rotateX(0deg);
+       -o-transform:rotateX(0deg);
+       -webkit-transform:rotateX(0deg);
+    }
+}
+
+
+@-moz-keyframes rotar{
+    
+    0%{
+        
+        transform:rotateX(-180deg); 
+        -ms-transform:rotateX(-180deg); 
+        -o-transform:rotateX(-180deg); 
+        -webkit-transform:rotateX(-180deg); 
+        -moz-transform:rotateX(-180deg); 
+    }
+    
+    70%{
+        
+        -ms-transform:rotateX(70deg);
+        -o-transform:rotateX(70deg);
+        -webkit-transform:rotateX(70deg);
+        -moz-transform:rotateX(70deg);
+        
+    }
+    
+    100%{
+        
+       transform:rotateX(0deg);
+       -o-transform:rotateX(0deg);
+       -ms-transform:rotateX(0deg);
+       -o-transform:rotateX(0deg);
+       -webkit-transform:rotateX(0deg);
+    }
+}
+
+
+@-ms-keyframes rotar{
+    
+    0%{
+        
+        transform:rotateX(-180deg); 
+        -ms-transform:rotateX(-180deg); 
+        -o-transform:rotateX(-180deg); 
+        -webkit-transform:rotateX(-180deg); 
+        -moz-transform:rotateX(-180deg); 
+    }
+    
+    70%{
+        
+        -ms-transform:rotateX(70deg);
+        -o-transform:rotateX(70deg);
+        -webkit-transform:rotateX(70deg);
+        -moz-transform:rotateX(70deg);
+        
+    }
+    
+    100%{
+        
+       transform:rotateX(0deg);
+       -o-transform:rotateX(0deg);
+       -ms-transform:rotateX(0deg);
+       -o-transform:rotateX(0deg);
+       -webkit-transform:rotateX(0deg);
+    }
+}
+
+@-o-keyframes rotar{
+    
+    0%{
+        
+        transform:rotateX(-180deg); 
+        -ms-transform:rotateX(-180deg); 
+        -o-transform:rotateX(-180deg); 
+        -webkit-transform:rotateX(-180deg); 
+        -moz-transform:rotateX(-180deg); 
+    }
+    
+    70%{
+        
+        -ms-transform:rotateX(70deg);
+        -o-transform:rotateX(70deg);
+        -webkit-transform:rotateX(70deg);
+        -moz-transform:rotateX(70deg);
+        
+    }
+    
+    100%{
+        
+       transform:rotateX(0deg);
+       -o-transform:rotateX(0deg);
+       -ms-transform:rotateX(0deg);
+       -o-transform:rotateX(0deg);
+       -webkit-transform:rotateX(0deg);
+    }
+}
+
+
+
+div#calculo div#zoom div#ventana p{
+    
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top:-10px;
+    right:-10px;
+}
+
+div#calculo div#zoom div#ventana img{
+    
+    display: block;
+    width:100%;
+}
+
+
+@media screen and (max-width:1300px){
+    
+    div#calculo div#zoom div#ventana{
+    
+        width:45vw;
+    }
+    
+    
+}
+
+@media screen and (max-width:1280px){
+    
+    div#calculo div#zoom div#ventana{
+    
+        width:30vw;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width:800px){
+    
+    div#calculo div#zoom div#ventana{
+    
+        width:70vw;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:500px){
+    
+    div#calculo div#zoom div#ventana{
+    
+        width:85vw;
+    }
+    
+    
+}
+
+@media screen and (max-width:300px){
+    
+    div#calculo div#zoom div#ventana{
+    
+        width:85vw;
+    }
+    
+    
+}

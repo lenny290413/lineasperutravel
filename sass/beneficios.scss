@@ -1,0 +1,36 @@
+@import "lg_grid";
+.beneficios{
+    .medio{
+        @include display;
+        flex-direction: column;
+    }
+}
+
+.beneficios_contenido{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.beneficio_items{
+    width: 25%;
+    margin: 10px;
+    flex: auto;
+    @include display;
+    flex-direction: column;
+    i{
+        font-size: 35px;
+        color: $color-primario;
+    }
+    h3{
+       font-family: $fuente_corrida;
+        margin: 10px 0;
+        border-bottom: 1px solid $color-primario;
+        width: 100%;
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+        font-family: $fuente_titulo;
+        line-height: 25px;
+    }
+}

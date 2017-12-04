@@ -1,0 +1,162 @@
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 300px);
+  grid-gap: 8px;
+  margin-top: 10px;
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 300px 300px 300px 300px 300px 300px; }
+
+.galeria-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 5px 11px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 11px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+  position: relative;
+  margin: 5px; }
+  .galeria-item img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+  .galeria-item:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1; }
+  .galeria-item:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1; }
+  .galeria-item:nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 3 /span 2;
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 2;
+    -ms-grid-row-span: 2; }
+  .galeria-item:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2; }
+  .galeria-item:nth-child(5) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2; }
+  .galeria-item:nth-child(6) {
+    grid-column: 3 / span 2;
+    grid-row: 1 /span 2;
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-column-span: 2;
+    -ms-grid-row-span: 2; }
+  .galeria-item:nth-child(7) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 3; }
+  .galeria-item:nth-child(8) {
+    -ms-grid-column: 4;
+    -ms-grid-row: 3; }
+  .galeria-item:nth-child(9) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 4; }
+  .galeria-item:nth-child(10) {
+    -ms-grid-column: 4;
+    -ms-grid-row: 4; }
+  .galeria-item:nth-child(11) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5; }
+  .galeria-item:nth-child(12) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 5; }
+  .galeria-item:nth-child(13) {
+    grid-column: 3 / span 2;
+    grid-row: 5 /span 1;
+    -ms-grid-column: 3;
+    -ms-grid-row: 5;
+    -ms-grid-column-span: 2; }
+  .galeria-item:nth-child(14) {
+    grid-column: 1 / span 2;
+    grid-row: 6 /span 1;
+    -ms-grid-column: 1;
+    -ms-grid-row: 6;
+    -ms-grid-column-span: 2; }
+  .galeria-item:nth-child(15) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 6; }
+  .galeria-item:nth-child(16) {
+    -ms-grid-column: 4;
+    -ms-grid-row: 6; }
+
+.titulo {
+  margin-top: 150px; }
+
+.galeria-hijo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.5);
+  top: 0;
+  left: -100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.agrandar {
+  width: 50px !important;
+  height: auto !important;
+  position: absolute;
+  left: 150%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.galeria-item:hover img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+.galeria-item:hover .galeria-hijo {
+  left: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+.galeria-item:hover .agrandar {
+  left: 50%;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+@media screen and (max-width: 768px) {
+  .galeria {
+    display: grid;
+    grid-template-rows: repeat(6, 150px); } }
+
+@media screen and (max-width: 650px) {
+  .galeria {
+    display: grid;
+    grid-template-rows: repeat(6, 100px); } }
+
+@media screen and (max-width: 500px) {
+  .galeria {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .galeria-item {
+    width: 100%; } }

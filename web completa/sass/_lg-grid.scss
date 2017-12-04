@@ -1,0 +1,8 @@
+$color-primario: #961B0C;
+$texto:'Francois One', sans-serif;
+$fuente-textos:'Raleway', sans-serif;
+@mixin display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  

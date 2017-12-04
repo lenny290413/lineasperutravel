@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineas Tour Operador - Vista 360°</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rochester">
+    <meta name="theme-color" content="#961B0C">
+    <meta name="msapplication-navbutton-color" content="#961B0C">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
+    <style>
+        #panorama {
+            width: 100%;
+            height: calc(100vh - 100px);
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+
+<body class="contenido">
+       <div class="preloader" id="preloader">
+        <div class="contenido-proloader">
+            <div class="top top1"></div>
+            <div class="top top2"></div>
+            <div class="top top3"></div>
+            <div class="top top4"></div><img src="imagenes/logo-color.png">
+            <h1>Tu Agencia de Viaje De Confianza</h1>
+        </div>
+    </div>
+    <header class="entero">
+        <div class="medio"><img src="imagenes/logo-blanco.png"><i class="icon-menu"></i>
+            <ul class="menu"><a class="imagen-logo" href="index.html"><img src="imagenes/logo-blanco.png"></a>
+                <li class="icon-direccion"><a href="index.html">Inicio</a></li>
+                <li class="icon-avion"><a href="paquetes.html">Paquetes</a></li>
+                <li class="icon-galeria"><a href="galeria.html">Galería</a></li>
+               <li class="icon-flag"><a href="vista-360.htm">Vista 360°</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="panorama"></div>
+    <script>
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "prueba/prueba.jpeg"
+        });
+
+    </script>
+    <script src="js/efectos.js">
+
+
+    </script>
+    <script src="js/wow.min.js">
+
+
+    </script>
+    <script src="js/carrusel.js">
+
+
+    </script>
+    <script>
+        new WOW().init();
+
+    </script>
+</body>
+<footer class="entero">
+    <div class="medio"><img src="imagenes/logo-blanco.png">
+        <div class="datos-contacto"><span><i class="icon-direccion"> </i>
+          <h3>Los Gorriones 151 - San Isidro</h3></span><span><i class="icon-telefono"> </i>
+          <h3>+00511 - 4800835 - 51997521959</h3></span><span>   <i class="icon-correo"> </i>
+          <h3>informes@lineastouroperador.com</h3></span><span><i class="icon-world"> </i>
+          <h3>www.lineastouroperador.com  </h3></span></div>
+    </div>
+</footer>
+<div class="ultimo entero">
+    <p class="medio"> Lineas Tour Operador 2017 - Todos Los Derechos Reservados</p>
+</div>
+
+</html>

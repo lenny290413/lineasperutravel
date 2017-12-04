@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina No Encontrada</title>
+    <link rel="stylesheet" href="css/404.css">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Monda" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../imagenes/fondo-404.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.hijo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.hijo h1{
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 12vw;
+    font-weight: normal;
+}
+.hijo h2{
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 4vw;
+    text-align: center;
+}
+.hijo h3{
+    font-family: 'Monda', sans-serif;
+    font-size: 3vw;
+    font-weight: normal;
+    text-align: center;
+    margin: 5px;
+}
+.hijo a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 50px;
+    margin: 20px;
+    font-family: 'Monda', sans-serif;
+    background: rgba(49,255,63,.3);
+    border: 1px solid white;
+}
+@media screen and (max-width:500px){
+    .hijo h1{
+        font-size: 40vw;
+    }
+    .hijo h2{
+        font-size: 12vw;
+    }
+    .hijo h3{
+        font-size: 6vw;
+    }
+}
+    
+    </style>
+<body>
+    <div class="hijo">
+       <h1>404</h1>
+        <h2>Pagina No Encontrada</h2>
+        <h3>No pudimos encontrar la pagina que estas buscando</h3>
+        <a href="index.html">Volver A Inicio</a>
+    </div>
+</body>
+</html>

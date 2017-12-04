@@ -1,0 +1,142 @@
+@import "_lg-grid";
+.banner {
+    position: relative;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: 100px;
+    background-size: cover;
+    animation:movimiento 10s alternate infinite;
+    background-position: top;
+    overflow: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(black, .5);
+        top: 0;
+    }
+}
+ 
+.banner-contenido {
+    height: 100%;
+    .medio {
+        height: 100%;
+        @include display;
+    }
+}
+.informacion{
+    margin-bottom: 50px;
+    font-family: $fuente-textos;
+}
+.izquierda,
+.derecha {
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+    flex: auto;
+}
+
+.izquierda {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        font-size: 40px;
+        font-family: $texto;
+    }
+    h2 {
+        font-weight: normal;
+        font-size: 40px;
+        margin: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: $texto;
+        span{
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    }
+    .lista{
+        li{
+            list-style: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            margin-top: 10px;
+            font-family: $fuente-textos;
+        }
+        i{
+            margin: 5px;
+        }
+        a{
+            padding: 10px 20px;
+            border: 1px solid white;
+            width: 200px;
+            color: white;
+            background: rgba(black,.5);
+            margin: 10px;
+            font-family: $texto;
+        }
+    }
+}
+.derecha{
+    border: 2px solid #6f96cc;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 1px 2px black;
+    overflow: hidden;
+}
+.derecha_hijo{
+    width: 400%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    img{
+        width: 25%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .derecha{
+        display: none;
+    }
+    .izquierda{
+        margin: 0;
+        width: 100%;
+        h1,h2,.lista{
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width:400px){
+
+    .izquierda{
+        @include display;
+        flex-direction: column;
+        h1{
+            font-size: 28px;
+            padding: 0;
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+            @include display;
+        }
+        .lista{
+            
+            li{
+                font-size: 16px;
+            }
+        }
+    }
+}

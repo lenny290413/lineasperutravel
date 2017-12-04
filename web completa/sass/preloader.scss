@@ -1,0 +1,146 @@
+@import "_lg-grid";
+.preloader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background: white;
+
+    overflow: hidden;
+
+    @include display;
+
+}
+
+.top {
+    position: absolute;
+    background: rgba(black, 1);
+}
+
+.top1 {
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 25%;
+}
+
+.top2 {
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 5px;
+}
+
+.top3 {
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    height: 25%;
+}
+
+.top4 {
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 5px;
+}
+
+.contenido-proloader {
+    position: relative;
+    @include display;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    img {
+        width: 400px;
+        animation: .5s prelo infinite alternate;
+        transition: all .5s;
+    }
+     h1 {
+        font-family: $texto !important;
+    }
+    h2 {
+        font-family: $texto !important;
+    }
+}
+
+.cerrar-preloader {
+    opacity: 0;
+    transform: translateY(-150%);
+    transition: all 0.5s;
+
+}
+.circulo{
+   width: 70%;
+    margin-top: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+@keyframes prelo {
+    to {
+
+        filter: opacity(20%);
+        transition: all .5s;
+    }
+    from {
+        filter: opacity(100%);
+        transition: all .5s;
+    }
+}
+
+
+@media screen and (max-width:1500px) {
+    .contenido-proloader {
+        position: relative;
+        @include display;
+        flex-direction: column;
+        width: 50%;
+        height: 50%;
+        img {
+            width: 400px;
+            animation: .5s prelo infinite alternate;
+            transition: all .5s;
+        }
+        h1 {
+            font-family: $texto;
+            text-align: center;
+        }
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .contenido-proloader {
+        img {
+            width: 300px;
+        }
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:769px) {
+    .contenido-proloader {
+        width: 90%;
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:369px) {
+    .contenido-proloader {
+        width: 90%;
+        height: 40%;
+        img {
+            width: 180px;
+        }
+        h1{
+            font-size: 20px;
+        }
+    }
+}

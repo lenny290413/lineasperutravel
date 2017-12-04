@@ -1,0 +1,103 @@
+.banner{
+    background-image: url(../imagenes/banner2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    margin-top: 100px;
+    background-position: center;
+    position: relative;
+}
+.banner-hijo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-hijo h2{
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    font-family: 'Merienda','sursive';
+}
+.info .medio{
+    margin: 20px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.info .medio img{
+    float: right;
+    width: 500px;
+}
+.info .medio p{
+    margin: 10px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    text-align: justify;
+}
+.resaltado{
+    font-weight: bolder;
+}
+.hijo{
+    text-align: center !important;
+    width: 100%;
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+    border-top: 1px solid black;
+    margin: 10px;
+}
+.lista{
+    display: flex;
+    justify-content: center;
+}
+.lista-contenido{
+    width: 40%;
+    margin: 30px;
+}
+.lista-contenido li{
+    margin: 5px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    list-style: url(../imagenes/check.png);
+    font-weight: bolder;
+    padding-left: 20px;
+}
+.lista-contenido:nth-child(1){
+    border-right: 1px solid black;
+}
+
+@media screen and (max-width:570px){
+    .info .medio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info img{
+        float: none;
+        width: 80% !important;
+    }
+    .hijo{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:500px){
+    .lista{
+        flex-direction: column;
+        width: 80%;
+    }
+    .lista-contenido{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .lista-contenido:nth-child(1){
+    border-style: none;
+        margin-bottom: 10px;
+    }
+}
+

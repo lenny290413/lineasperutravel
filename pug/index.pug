@@ -10,24 +10,15 @@ html(lang="es")
         script(src="https://code.jquery.com/jquery-1.11.3.min.js")
     include menu.pug
     body
-        .banner
+        .banner 
             img(src="imagenes/slider/banner1.jpg")
             .banner-informacion
                 h1 Viajes Turisticos en Perú
                 p tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ing
                 a(href="#") Ver Viajes
         include primera-seccion.pug
-        span.titulo-contenedor
-            h2.titulo COMIENZA TU AVENTURA DE TURISMO
-            img(src="imagenes/orla-titulos.png")
-        include seccion_peru.pug
-        span.titulo-contenedor
-            h2.titulo NUESTROS BENEFICIOS
-            img(src="imagenes/orla-titulos.png")
-        include seccion_paquetes.pug
-        span.titulo-contenedor
-            h2.titulo CONTACTANOS
-            img(src="imagenes/orla-titulos.png")
+        include seccion_beneficios.pug
+        include paquete_nac_inter.pug  
         include formulario.pug
         include footer.pug
         script(src="js/menu.js")

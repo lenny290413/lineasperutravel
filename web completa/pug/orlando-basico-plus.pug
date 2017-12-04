@@ -1,0 +1,155 @@
+doctype html
+html(lang="es")
+    head
+      title Lineas Tour Operador - Agencia Mayorista de  Viajes
+      meta(charset="UTF-8")
+      include metas/metas-09.pug
+      link(rel="stylesheet",href="css/preloader.css")
+      link(rel="stylesheet",href="css/slider-paquetes/slider9.css")
+      link(rel="stylesheet",href="css/estilos.css") 
+      link(rel="stylesheet",href="css/estilos-plantilla.css") 
+      link(rel="stylesheet",href="css/menu.css")
+      link(rel="stylesheet",href="css/acordeon.css")
+      link(rel="stylesheet",href="css/slider-plantilla.css")
+      link(rel="stylesheet",href="css/styles.css")
+      link(rel="stylesheet",href="css/animate.css")
+      link(rel="stylesheet",href="https://fonts.googleapis.com/css?family=Ceviche+One|Fredericka+the+Great")
+      link(rel="stylesheet",href="https://fonts.googleapis.com/css?family=Rochester")
+      meta(name='theme-color', content='#961B0C')
+      meta(name='msapplication-navbutton-color', content='#961B0C')
+      meta(name='apple-mobile-web-app-capable', content='yes')
+      meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+      script(src="https://code.jquery.com/jquery-1.11.3.min.js")
+    include menu.pug
+    body.contenido
+        include preloader.pug
+        .banner
+            .banner-contenido.entero
+                .medio
+                    .izquierda
+                        h1.wow.fadeInLeft(data-wow-delay='.1s') Orlando Básico Plus
+                        h2.wow.fadeInLeft(data-wow-delay='.3s')  $809 (En base a 4 personas)
+                        .lista
+                            li.wow.fadeInLeft(data-wow-delay='.5s')
+                                i.icon-check 
+                                p Traslado Aeropuerto Orlando (MCO) / RESORT / Aeropuerto (MCO)
+                            li.wow.fadeInLeft(data-wow-delay='.7s')
+                                i.icon-check 
+                                p 6 Días / 5 Noches + 1 Noche Gratis 
+                            li.wow.fadeInLeft(data-wow-delay='.9s')
+                                i.icon-check 
+                                p Mini Deparatamento en Westgate Resort
+                            li.wow.fadeInLeft(data-wow-delay='1.1s')
+                                i.icon-check 
+                                p Tour al Resort
+                    .derecha
+                         form(method='POST' action='/register')
+                            h2 Contactenos
+                            input(type='text',placeholder="Nombre")
+                            input(type='text',placeholder="Telefono")
+                            input(type='text',placeholder="E-mail")
+                            textarea(placeholder="Mensaje")
+                            input.boton(type='submit' value="Enviar")
+                    
+        .contadores.entero
+            .medio
+                span.contador-contenidos.wow.fadeInUp(data-wow-delay=".2s")
+                    i.icon-avion
+                    span.contene 
+                        h4 +
+                        p(data-valor="480") 0
+                    h3  Pasajes Vendidos
+                span.contador-contenidos.wow.fadeInUp(data-wow-delay=".5s")
+                    i.icon-users
+                    span.contene 
+                        h4 +
+                        p(data-valor="500") 0
+                    h3  Clientes Satisfechos
+                span.contador-contenidos.wow.fadeInUp(data-wow-delay=".8s")
+                    i.icon-suitcase
+                    span.contene 
+                        h4 +
+                        p(data-valor="10") 0
+                    h3  Convenios Con Agencías
+                span.contador-contenidos.wow.fadeInUp(data-wow-delay="1.1s")
+                    i.icon-package
+                    span.contene 
+                        h4 +
+                        p(data-valor="1000") 0
+                    h3  Regalos
+
+
+        .informacion.entero
+            .medio
+                p.wow.fadeInLeft 7 días y 6 noches en cualquiera de nuestros Westgate Resorts. Lujo, comodidad y exclusividad ahora al alcance de sus manos. Comparte junto a tu familia inolvidables momentos con una estadía de primer nivel, más de 12 piscinas, lagos, canchas de mini gol, sala de cines y hasta un parque de agua aguardan por ti.  <br> Tendrán acceso a 2 parques principales de Disney. Envuélvete en al mágico mundo de Mickey Mouse, el castillo, las princesas y el desfile en Magic Kingdom. Escoge visitar el increíble mundo de PANDORA donde podrás experimentar en carne propia como viven los Avatars; También sube a la montaña rusa “Expedition Everest” entre otras impactantes atracciones de Animal Kingdom. Hollywood Studios te espera con el majestuoso show “Fantasmic”; Toy Story, Star Wars y mucho más. Date un viaje al rededor del mundo y las  maravillas que hay en cada continente recreado todas en un mismo parque, China, Italia, México, Francia entre otros; Test Track, Nemo y sus amigos también te esperan. Para finalizar podrás tener un relajante día en cualquiera de los 2 fascinantes parques de agua Typhoon Lagoon o Blizzard Beach! <br> Ingresa a ambos parques mundialmente famosos Universal Studios o Isla de la Aventura por 2 días Park to Park o un parque a las ves por 6 días consecutivos. Con sorprendentes simuladores 3D & 4D e imponentes montañas rusas. El mundo de Harry Potter en ambos parques, la nueva escalofriando atracción King Kong; The Hulk, Spiderman, escapa de Jurassic Park y más solo en Isla de la Aventura. También los clásicos como E.T., Transformers, Los Hombres de Negro, Terminator o las nuevas atracciones como The Mummy, The Minions, Sherk, The Simpsons en el sin igual Universal Studios. <br> Traslados y Cuponeras de descuento incluido.
+
+                img.wow.fadeInRight(src="imagenes/paquete-plantilla/primera9.png")
+        .segunda-seccion.entero
+            .medio
+                h2.titulo Te Regalaremos 1 Noche Gratis 
+
+        .datos.entero
+            .medio
+                img.imagen-plantilla2.wow.fadeInLeft(src="imagenes/paquete-plantilla/paquete9-2.jpg")
+                .acordeon
+                    h2.titulo Obtendras
+                    #container-main
+                      .accordion-container
+                        a.accordion-titulo(href='#') Traslado
+                          span.toggle-icon
+                        .accordion-content
+                          | Traslado Aeropuerto Orlando (MCO) / RESORT / Aeropuerto (MCO)
+                        .accordion-container
+                        a.accordion-titulo(href='#') Estadía
+                          span.toggle-icon
+                        .accordion-content
+                          | 5 Noches + 1 Noche Gratis Orlando - WESTGATE RESORTS
+                        .accordion-container
+                        a.accordion-titulo(href='#') Paseo y Tour
+                          span.toggle-icon
+                        .accordion-content
+                            | 2 día en el parque Disney con traslado &#40; Escoger entre: Magic Kingdom, Epcot, Hollywood Studios o Animal Kingdom + un parque de agua &#41; </br>
+                            | 2 MULTI DAY / PARK TO PARK traslados a Universal Studios & Islas de la Aventura o 6 días Universal Studio & Isla de la Aventura. Un parque a la vez. </br>
+                            | Tour de presentación del Resort</br>
+                            | Tour de compras a escoger entre Vineland Premium Outlet</br>
+                        
+                        .accordion-container  
+                        a.accordion-titulo(href='#') Además Gratis
+                          span.toggle-icon
+                        .accordion-content
+                          li Cuponera de descuentos para Premium outlet, International Outlets o Florida Mall
+                          li Cuponera de descuentos en snacks o bebidas gratis en mas de 20 Restaurantes como Señor Frogs, Mangos Café, Golden Corral, etc.
+                          li En tu día gratis un desayuno buffet de bienvenida 
+                          li Tarjeta de Asistencia </br>
+                        .accordion-container  
+                        a.accordion-titulo(href='#') Datos Adicionales
+                          span.toggle-icon
+                        .accordion-content
+                          li Precio de Alojamiento en Mini Apartamento.
+                          li Precios por persona en dólares americanos.
+                          li Precios aplican entre septiembre hasta el 14 de Diciembre.
+                          li Válido para comprar todo el año
+                          li Precios no aplica Noviembre: 17 - 18- 22 -23 -24 -25
+                          li Codigo del Programa: 05
+        include boletin
+        .informacion.info.entero
+            .medio
+                .izquierda 
+                    .precio
+                        h2.titulo.wow.fadeInUp Inversión
+                        span
+                            h3.wow.fadeInUp  $809.00 (TC S/ 3.50)
+                            h3.wow.fadeInUp  S/ 2.829.00
+                    .elementos
+                        h2.titulo.wow.fadeInUp  Descargar Nuestros Archivos
+                        span
+                             a.wow.fadeInUp(href="elementos-descarga/word/paquete5.docx") Descarga Toda La Información
+                             a.wow.fadeInUp(href="elementos-descarga/flyer/5.jpg",download) Descarga Nuestro Flyer
+
+                img.wow.fadeInUp(src="imagenes/paquete-plantilla/paquete9-3.png")
+            script(src="js/efectos.js") 
+            script(src="js/wow.min.js") 
+            script new WOW().init();
+    include footer 
+    .ultimo.entero.wow.fadeInUp 
+        p.medio  Lineas Tour Operador 2017 - Todos Los Derechos Reservados

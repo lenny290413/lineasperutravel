@@ -1,0 +1,69 @@
+@import "lg_grid";
+.tipo{
+    .medio{
+            @include display;
+        flex-direction: column;
+    }
+}
+.tipo_contenido{
+    @include display;
+    width: 100%;
+}
+
+.tipo_items{
+    width: 20%;
+    flex: auto;
+    margin: 10px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+     &::before{
+        content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 100%;
+         left: 0;
+         background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 75%);
+         transition: all .3s;
+    }
+    &:hover:before{
+        top: 0;
+        transition: all .3s;
+    }
+}
+.tipo_boton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include display;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    font-size: 40px;
+    font-family: $fuente_titulo;
+    color: white;
+    background: rgba(black,.1);
+   
+}
+
+.tipo_boton2{
+    position: relative;
+    font-size: 16px;
+    padding:10px 20px;
+    border: 1px solid white;
+    top: 20%;
+    opacity: 0;
+    transition: all .5s;
+}
+.tipo_boton:hover .tipo_boton2{
+    top: 0;
+    opacity: 1;
+    margin-top: 20px;
+    transition: all .3s;
+}

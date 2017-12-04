@@ -1,0 +1,174 @@
+.banner {
+  margin-top: 99px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 620px;
+  overflow: hidden;
+  background: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .banner iframe {
+    width: 70%; }
+
+.banner-contenido {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 72%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  z-index: 10;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .banner-contenido h1 {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    width: 40%;
+    font-family: "Francois One", sans-serif;
+    font-size: 26px;
+    margin: 5px; }
+  .banner-contenido h2 {
+    padding: 10px;
+    font-family: "Francois One", sans-serif;
+    margin: 5px;
+    width: 40%;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px; }
+    .banner-contenido h2:nth-child(2) {
+      background: rgba(6, 103, 19, 0.4); }
+    .banner-contenido h2:nth-child(3) {
+      background: rgba(105, 19, 8, 0.4); }
+    .banner-contenido h2:nth-child(4) {
+      background: rgba(41, 85, 129, 0.4); }
+    .banner-contenido h2:nth-child(5) {
+      background: rgba(148, 156, 16, 0.4); }
+    .banner-contenido h2:nth-child(6) {
+      background: rgba(126, 43, 188, 0.4);
+      -webkit-box-shadow: 0 2px 0 2px black;
+      box-shadow: 0 2px 0 2px black;
+      text-align: center;
+      cursor: pointer; }
+
+.modal-hotel {
+  position: absolute;
+  z-index: 50000;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  top: -100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .modal-hotel h2 {
+    color: white;
+    font-family: "Francois One", sans-serif;
+    display: none; }
+
+.modal-hotel-aparecer {
+  position: fixed;
+  top: 50% !important; }
+
+@media screen and (max-width: 900px) {
+  .banner-contenido h1, .banner-contenido h2 {
+    width: 80%; } }
+
+@media screen and (max-width: 768px) {
+  .banner-contenido {
+    width: 100%;
+    left: 50%;
+    top: 78%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .banner-contenido h1 {
+      font-size: 14px;
+      width: 100%;
+      margin: 5px; }
+    .banner-contenido h2 {
+      font-size: 14px;
+      width: 45%;
+      margin: 5px;
+      -webkit-box-flex: 1;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto; }
+      .banner-contenido h2:last-child {
+        width: 100%; } }
+
+@media screen and (max-width: 369px) {
+  .banner-contenido {
+    left: 52%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    top: 78%; }
+    .banner-contenido h1 {
+      width: 100%; }
+    .banner-contenido h2 {
+      font-size: 11px; }
+      .banner-contenido h2:last-child {
+        width: 100%; } }
