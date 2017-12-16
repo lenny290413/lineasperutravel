@@ -67,3 +67,24 @@
     margin-top: 20px;
     transition: all .3s;
 }
+
+@media screen and (max-width:768px){
+    .tipo_contenido{
+        flex-wrap: wrap;
+    }
+    .tipo_items{
+        width: 30%;
+    }
+
+}
+
+
+
+@media screen and (max-width:400px){
+    .tipo_items{
+        width: 100%;
+    }
+    .tipo_texto{
+     font-size: 35px;   
+    }    
+}

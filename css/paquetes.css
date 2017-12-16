@@ -1,0 +1,110 @@
+.paquetes_contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.paquetes_items {
+  width: 20%;
+  margin: 8px;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto; }
+  .paquetes_items .imagen_paquetes {
+    width: 100%;
+    height: 180px;
+    overflow: hidden; }
+    .paquetes_items .imagen_paquetes img {
+      width: 100%;
+      height: 180px;
+      -webkit-transition: -webkit-transform .5s;
+      transition: -webkit-transform .5s;
+      -o-transition: transform .5s;
+      transition: transform .5s;
+      transition: transform .5s, -webkit-transform .5s; }
+  .paquetes_items h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0;
+    width: 80%;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    color: black; }
+  .paquetes_items:hover {
+    -webkit-box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+    .paquetes_items:hover img {
+      -webkit-transform: scale(2) rotate(7deg);
+      -ms-transform: scale(2) rotate(7deg);
+      transform: scale(2) rotate(7deg); }
+
+.precio_paquetes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: black;
+  padding: 10px 0;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.precio_desde {
+  font-size: 14px;
+  padding-right: 10px; }
+
+.precio_soles, .precio_dolar {
+  font-size: 22px; }
+
+.precio_soles {
+  padding-right: 10px;
+  border-right: 1px solid #ccc; }
+
+.precio_dolar {
+  padding-left: 10px; }
+
+@media screen and (max-width: 1100px) {
+  .paquetes_items {
+    width: 30%;
+    margin: 5px; }
+  .precio_soles, .precio_dolar {
+    font-size: 16px; }
+  .precio_desde {
+    font-size: 12px;
+    padding: 2px; } }
+
+@media screen and (max-width: 769px) {
+  .paquetes_items {
+    width: 45%; }
+    .paquetes_items:hover {
+      -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); } }
+
+@media screen and (max-width: 400px) {
+  .paquetes_items {
+    width: 100%; } }

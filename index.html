@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>Lineas Perú Travel</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kavivanar|Roboto+Condensed"/>
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="css/menu.css"/>
     <link rel="stylesheet" href="css/tipos-de-viajes.css"/>
     <link rel="stylesheet" href="css/beneficios.css"/>
-    <link rel="stylesheet" href="css/paquete_nac_inter.css"/>
+    <link rel="stylesheet" href="css/paquetes.css"/>
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="stylesheet" href="css/formulario.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
@@ -19,76 +20,97 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   </head>
   <header class="entero">
-    <nav class="medio"><a><img src="imagenes/logo-color.png"/></a><i class="icon-menu" id="icon-menu"></i>
-      <ul class="menu" id="menu">
-        <li><a> <span>INICIO</span></a></li>
-        <li><a> <span>PAQUETES</span></a></li>
-        <li><a> <span>PROMOCIONES</span></a></li>
-        <li><a>  <span>BENEFICIOS</span></a></li>
-        <li><a> <span>RESERVA TU VIAJE </span></a></li>
-      </ul>
-    </nav>
-  </header>
-  <body>
-    <div class="banner"> <img src="imagenes/slider/banner1.jpg"/>
-      <div class="banner-informacion">
-        <h1>Viajes Turisticos en Perú</h1>
-        <p>tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ing</p><a href="#">Ver Viajes</a>
+    <div class="medio">
+      <div class="contenido_top"><span class="one-part top-header"><i class="icon-telefono"> </i><span class="telefono"> 51-1485-7943 </span></span><span class="two-part top-header"><i class="icon-inicio"></i><span class="direccion">Av. Antunez de Mayolo 897 - Los Olivos</span></span><span class="three-part top-header"><a class="icon-facebook" href="#"></a><a class="icon-whatsapp" href="#"></a></span></div>
+      <div class="contenido_menu"><a href=""><img class="logo-menu" src="imagenes/logo-blanco.png"/></a><i class="icon-menu" id="icon-menu"></i>
+        <ul class="menu" id="menu">
+          <li> <a href="#"> <span>INICIO</span></a></li>
+          <li><a href="#"> <span>PAQUETES</span></a></li>
+          <li><a href="#"> <span>PROMOCIONES</span></a></li>
+          <li><a href="#"> <span>RESERVA TU VIAJE</span></a></li>
+        </ul>
       </div>
     </div>
-    <!-- -->
+  </header>
+  <body>
+    <div class="banner entero">
+      <div class="medio">
+        <div class="banner-conten"><span class="banner1-parte banner-contenido"><img src="imagenes/slider/banner1.jpg"/>
+            <div class="banner-informacion izquierda">
+              <h2>Viajes De Vacaciones</h2>
+              <p>tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y l</p><a href="#">Ver Viajes</a>
+            </div></span><span class="banner1-parte banner-contenido"><img src="imagenes/slider/banner2.jpg"/>
+            <div class="banner-informacion derecha">
+              <h2>Viajes De Vacaciones</h2>
+              <p>tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y l</p><a href="#">Ver Viajes</a>
+            </div></span><span class="banner1-parte banner-contenido"><img src="imagenes/slider/banner3.jpg"/>
+            <div class="banner-informacion izquierda">
+              <h2>Viajes De Vacaciones</h2>
+              <p>tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y l</p><a href="#">Ver Viajes</a>
+            </div></span><span class="banner1-parte banner-contenido"><img src="imagenes/slider/banner4.jpg"/>
+            <div class="banner-informacion derecha">
+              <h2>Viajes De Vacaciones</h2>
+              <p>tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y l</p><a href="#">Ver Viajes</a>
+            </div></span></div>
+      </div>
+    </div>
     <div class="tipo entero">
       <div class="medio">
         <p class="titulo">¿Qué tipo de viaje buscas?</p>
         <div class="tipo_contenido">
-          <div class="tipo_items"><img src="imagenes/tipos-de-viajes/aventura.jpeg"/><a class="tipo_boton" href="#">
-              <p class="tipo_texto">Aventura</p><span class="tipo_boton2">Ver Mas</span></a></div>
-          <div class="tipo_items"><img src="imagenes/tipos-de-viajes/luna-de-miel.jpg"/><a class="tipo_boton" href="#">
-              <p class="tipo_texto">Luna de miel</p><span class="tipo_boton2">Ver Mas</span></a></div>
-          <div class="tipo_items"><img src="imagenes/tipos-de-viajes/playas.jpg"/><a class="tipo_boton" href="#">
-              <p class="tipo_texto">Playas</p><span class="tipo_boton2">Ver Mas</span></a></div>
-          <div class="tipo_items"><img src="imagenes/tipos-de-viajes/promociones.jpg"/><a class="tipo_boton" href="#">
-              <p class="tipo_texto">Promociones</p><span class="tipo_boton2">Ver Mas        </span></a></div>
+          <div class="tipo_items"><img src="imagenes/tipos-de-viajes/vacaciones.jpg"/><a class="tipo_boton" href="#">
+              <p class="tipo_texto">Vacaciones</p><span class="tipo_boton2">Ver Mas</span></a></div>
+          <div class="tipo_items"><img src="imagenes/tipos-de-viajes/fulldays.jpg"/><a class="tipo_boton" href="#">
+              <p class="tipo_texto">Fulldays</p><span class="tipo_boton2">Ver Mas</span></a></div>
+          <div class="tipo_items"><img src="imagenes/tipos-de-viajes/ofertas.jpeg"/><a class="tipo_boton" href="#">
+              <p class="tipo_texto">Ofertas</p><span class="tipo_boton2">Ver Mas</span></a></div>
+          <div class="tipo_items"><img src="imagenes/tipos-de-viajes/vuelos.jpeg"/><a class="tipo_boton" href="#">
+              <p class="tipo_texto">Vuelos</p><span class="tipo_boton2">Ver Mas        </span></a></div>
         </div>
       </div>
     </div>
-    <div class="beneficios entero">
+    <div class="paquetes entero">
       <div class="medio">
-        <p class="titulo">Beneficios</p>
-        <div class="beneficios_contenido">
-          <div class="beneficio_items"><i class="icon-seguros"></i>
-            <h3>Seguros de viajes</h3>
-            <p> archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de te</p>
-          </div>
-          <div class="beneficio_items"><i class="icon-precios"></i>
-            <h3>Precios Bajos</h3>
-            <p> archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de te</p>
-          </div>
-          <div class="beneficio_items"><i class="icon-promociones-1"></i>
-            <h3>Promociones </h3>
-            <p>archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un im</p>
-          </div>
-          <div class="beneficio_items"><i class="icon-convenios"></i>
-            <h3>Convenios</h3>
-            <p> archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="vuelo entero">
-      <div class="medio">
-        <p class="titulo">Viajes Internacional & Nacional</p>
-        <div class="vuelo_contenido">
-          <div class="vuelo_internacional"><img src="imagenes/tipos-de-viajes/internacional.jpg"/><span><i class="icon-airplane"></i>
-              <p>Viajes Internacionales</p></span></div>
-          <div class="vuelo_nacional"><img src="imagenes/tipos-de-viajes/nacional.jpg"/><span><i class="icon-airplane"></i>
-              <p>Viajes Nacionales</p></span></div>
-        </div>
+        <p class="titulo">Paquetes Armados</p>
+        <div class="paquetes_contenido"><a class="paquetes_items" href=""><span class="imagen_paquetes"><img src="imagenes/tipos-de-viajes/aventura.jpeg"/></span>
+            <h2>Punta Sal</h2><span class="precio_paquetes">
+              <p class="precio_desde">Desde:</p>
+              <p class="precio_soles">S/500.00</p>
+              <p class="precio_dolar">$100.00</p></span></a><a class="paquetes_items" href=""><span class="imagen_paquetes"><img src="imagenes/tipos-de-viajes/internacional.jpg"/></span>
+            <h2>Punta Sal</h2><span class="precio_paquetes">
+              <p class="precio_desde">Desde:</p>
+              <p class="precio_soles">S/500.00</p>
+              <p class="precio_dolar">$100.00</p></span></a><a class="paquetes_items" href=""><span class="imagen_paquetes"><img src="imagenes/tipos-de-viajes/luna-de-miel.jpg"/></span>
+            <h2>Punta Sal</h2><span class="precio_paquetes">
+              <p class="precio_desde">Desde:</p>
+              <p class="precio_soles">S/500.00</p>
+              <p class="precio_dolar">$100.00</p></span></a><a class="paquetes_items" href=""><span class="imagen_paquetes"><img src="imagenes/tipos-de-viajes/vacaciones.jpg"/></span>
+            <h2>Punta Sal</h2><span class="precio_paquetes">
+              <p class="precio_desde">Desde:</p>
+              <p class="precio_soles">S/500.00</p>
+              <p class="precio_dolar">$100.00</p></span></a><a class="paquetes_items" href=""><span class="imagen_paquetes"><img src="imagenes/tipos-de-viajes/aventura.jpeg"/></span>
+            <h2>Punta Sal</h2><span class="precio_paquetes">
+              <p class="precio_desde">Desde:</p>
+              <p class="precio_soles">S/500.00</p>
+              <p class="precio_dolar">$100.00</p></span></a><a class="paquetes_items" href=""><span class="imagen_paquetes"><img src="imagenes/tipos-de-viajes/internacional.jpg"/></span>
+            <h2>Punta Sal</h2><span class="precio_paquetes">
+              <p class="precio_desde">Desde:</p>
+              <p class="precio_soles">S/500.00</p>
+              <p class="precio_dolar">$100.00</p></span></a><a class="paquetes_items" href=""><span class="imagen_paquetes"><img src="imagenes/tipos-de-viajes/luna-de-miel.jpg"/></span>
+            <h2>Punta Sal</h2><span class="precio_paquetes">
+              <p class="precio_desde">Desde:</p>
+              <p class="precio_soles">S/500.00</p>
+              <p class="precio_dolar">$100.00</p></span></a><a class="paquetes_items" href=""><span class="imagen_paquetes"><img src="imagenes/tipos-de-viajes/vacaciones.jpg"/></span>
+            <h2>Punta Sal</h2><span class="precio_paquetes">
+              <p class="precio_desde">Desde:</p>
+              <p class="precio_soles">S/500.00</p>
+              <p class="precio_dolar">$100.00</p></span></a></div>
       </div>
     </div>
     <div class="formulario entero">
       <div class="medio">
-        <form action="">
+        <p class="titulo">Contactanos</p>
+        <form action="enviar.php">
           <input type="text" placeholder="Nombre"/>
           <input type="text" placeholder="Telefono"/>
           <input type="text" placeholder="Correo"/>
@@ -99,7 +121,11 @@
           <textarea placeholder="Mensaje"></textarea>
           <input type="submit" value="Enviar"/>
         </form>
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.163671701765!2d-77.0266250851404!3d-12.100945346205615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86e63fe24b3%3A0x7866baebde06107b!2sLineas+Tour+Operador!5e0!3m2!1ses!2spe!4v1511987591452" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <div class="redes_contacto">
+          <p><i class="icon-telefono"></i><span>+(51) 1485-7943 / 99-752-1959</span></p>
+          <p><i class="icon-email"></i><span>reservas@lineasperutravel.com</span></p>
+          <p><i class="icon-inicio"></i><span>Av. Antunez de Mayolo 897 - Los Olivos Lima - Perú</span></p><span class="redes_formulario"><a class="icon-facebook" href="#"></a><a class="icon-whatsapp" href="#"></a></span>
+        </div>
       </div>
     </div>
     <div class="footer entero">

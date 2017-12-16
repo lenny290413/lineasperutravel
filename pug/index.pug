@@ -3,6 +3,7 @@ html(lang="es")
         meta(charset="utf-8")
         title Lineas Perú Travel
         meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
         meta(name="description", content="")
         meta(name="keywords", content="")
         include fuentes.pug
@@ -10,16 +11,36 @@ html(lang="es")
         script(src="https://code.jquery.com/jquery-1.11.3.min.js")
     include menu.pug
     body
-        .banner 
-            img(src="imagenes/slider/banner1.jpg")
-            .banner-informacion
-                h1 Viajes Turisticos en Perú
-                p tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ing
-                a(href="#") Ver Viajes
+        .banner.entero
+            .medio
+                .banner-conten
+                    span.banner1-parte.banner-contenido
+                        img(src="imagenes/slider/banner1.jpg")
+                        .banner-informacion.izquierda
+                            h2 Viajes De Vacaciones
+                            p tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y l
+                            a(href="#") Ver Viajes
+                    span.banner1-parte.banner-contenido
+                        img(src="imagenes/slider/banner2.jpg")
+                        .banner-informacion.derecha
+                            h2 Viajes De Vacaciones
+                            p tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y l
+                            a(href="#") Ver Viajes
+                    span.banner1-parte.banner-contenido
+                        img(src="imagenes/slider/banner3.jpg")
+                        .banner-informacion.izquierda
+                            h2 Viajes De Vacaciones
+                            p tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y l
+                            a(href="#") Ver Viajes
+                    span.banner1-parte.banner-contenido
+                        img(src="imagenes/slider/banner4.jpg")
+                        .banner-informacion.derecha
+                            h2 Viajes De Vacaciones
+                            p tándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y l
+                            a(href="#") Ver Viajes
         include primera-seccion.pug
-        include seccion_beneficios.pug
-        include paquete_nac_inter.pug  
-        include formulario.pug
+        include paquetes.pug  
+        include formulario.pug   
         include footer.pug
         script(src="js/menu.js")
     footer

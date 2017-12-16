@@ -1,6 +1,7 @@
 .formulario.entero
     .medio
-        form(action="")
+        p.titulo Contactanos
+        form(action="enviar.php")
             input(type="text", placeholder="Nombre")
             input(type="text", placeholder="Telefono")
             input(type="text", placeholder="Correo")
@@ -10,4 +11,17 @@
             input(type="date", placeholder="Fecha de salida")
             textarea(placeholder="Mensaje")
             input(type="submit" value="Enviar")
-        iframe.mapa(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.163671701765!2d-77.0266250851404!3d-12.100945346205615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86e63fe24b3%3A0x7866baebde06107b!2sLineas+Tour+Operador!5e0!3m2!1ses!2spe!4v1511987591452",frameborder="0",allowfullscreen)
+        .redes_contacto
+            p
+                i.icon-telefono
+                span +(51) 1485-7943 / 99-752-1959
+            p
+                i.icon-email
+                span reservas@lineasperutravel.com
+            p
+                i.icon-inicio
+                span Av. Antunez de Mayolo 897 - Los Olivos Lima - Perú
+            span.redes_formulario
+                a.icon-facebook(href="#")
+                a.icon-whatsapp(href="#")
+                

@@ -1,0 +1,93 @@
+@import "lg_grid";
+.paquetes_contenido{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.paquetes_items{
+    width: 20%;
+    margin: 8px;
+    border: 1px solid #ccc;
+    @include display;
+    flex-direction: column;
+    flex: auto;
+    .imagen_paquetes{
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 180px;
+            transition: transform .5s;
+        }
+
+    }
+            h2{
+                font-family: $fuente_titulo;
+                font-size: 18px;
+                text-align: center;
+                margin: 5px 0;
+                width: 80%;
+                padding: 5px 0;
+                border-bottom: 1px solid #ccc;
+                color: black;
+        }
+    &:hover{
+        box-shadow: 1px 1px 11px rgba(black,.5);
+        transition: all .5s;
+        img{
+            transform: scale(2) rotate(7deg);
+        }
+    }
+}
+.precio_paquetes{
+    @include display;
+    color: black;
+    padding: 10px 0;
+    font-family: $fuente_titulo;
+}
+.precio_desde{
+    font-size: 14px;
+    padding-right: 10px;
+}
+.precio_soles , .precio_dolar{
+    font-size: 22px;
+}
+.precio_soles{
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+}
+.precio_dolar{
+    padding-left: 10px;
+}
+
+@media screen and (max-width:1100px){
+    .paquetes_items{
+        width: 30%;
+        margin: 5px;
+    }
+    .precio_soles , .precio_dolar{
+    font-size: 16px;
+}
+    .precio_desde{
+        font-size: 12px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width:769px){
+    .paquetes_items{
+        width: 45%;
+        &:hover{
+             box-shadow: 1px 1px 2px rgba(black,.5);
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .paquetes_items{
+        width: 100%;
+       
+    }
+  
+}
